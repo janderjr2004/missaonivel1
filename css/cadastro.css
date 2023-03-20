@@ -1,0 +1,182 @@
+h1 {
+    display: flex;
+    font-family: Bahnschfrit;
+    color: #333;
+    margin-top: 50px;
+    justify-content: center;
+    font-size: 50px;
+ }
+
+ .cadastro {
+    width: 80%;
+    margin: auto;
+    background-color: blue;
+    height: 500px;
+ }
+
+ .container-cadastro {
+    display: flex;
+    margin-top: 125px;
+    justify-content: center;
+    background-color: rgb(228, 227, 227);
+ }
+
+
+.group        { 
+  position:relative; 
+  margin-bottom:30px; 
+}
+input         {
+  border-radius: 4px;
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus     { outline:none; }
+
+/* LABEL ======================================= */
+label          {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+  font-family: Bahnschfrit;
+}
+
+/* ATIVO */
+input:focus ~ label, input:valid ~ label    {
+  top:-20px;
+  font-size:14px;
+  color:#333;
+}
+
+/* BOTTOM BARS ================================= */
+.bar  { position:relative; display:block; width:500px; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#333; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* ATIVO */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* ATIVADO */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMAÇÕES ================ */
+@-webkit-keyframes inputHighlighter {
+  from { background:#333; }
+  to  { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+  from { background:#333; }
+  to  { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+  from { background:#333; }
+  to  { width:0; background:transparent; }
+}
+
+/* COMPLEMENTOS  ================ */
+
+#nome,#email,#logradouro {
+  width: 500px;
+}
+
+#cep {
+  width: 200px;
+  text-align: center;
+}
+
+#div-cep > .bar {
+  width: 200px;
+}
+
+#numero,#uf {
+  width: 100px;
+  text-align: center;
+}
+
+#div-numero > .bar, #div-uf > .bar {
+  width: 100px;
+}
+
+#div-uf {
+  top: -184px;
+  left: 398px;
+}
+
+#div-complemento {
+  top: -72px;
+  left: 200px;
+}
+
+#div-complemento > .bar, #div-cidade > .bar {
+  width: 300px;
+}
+
+#div-cidade {
+  top: -112px;
+}
+
+
+/* BUTTON SUBMIT ================ */
+
+button {
+  font-family: Bahnschfrit;
+  background-color: #333;
+  border: none;
+  color: white;
+  width: 150px;
+  height: 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 362px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: rgb(32, 32, 32);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  cursor: pointer;
+}

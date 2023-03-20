@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/formatos.css">
+  <link rel="stylesheet" href="./css/cadastro.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="topnav">
+    <a class="active" href="./home.html">Home</a>
+    <a href="./receitas.html">Receitas</a>
+    <a href="./cadastro.html">Cadastro</a>
+  </div>
+<h1>CADASTRO</h1>
+
+<div class="container-cadastro">
+  <form action="https://api.staticforms.xyz/submit" method="POST">
+    <input type="hidden" name="accessKey" value="9639ea92-3551-4f2b-a94c-54d0f95d7c2d">
+    <div class="group" div="div-nome">      
+      <input type="text" id="nome" name="name" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Nome</label>
+    </div>
+
+    <div class="group" id="div-email">      
+      <input type="email" id="email" name="email" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Email</label>
+    </div>
+
+    <div class="group" id="div-cep">      
+      <input type="text" id="cep" name="$cep" required>
+      <span class="highlight"></span> 
+      <span class="bar"></span> 
+      <label>CEP</label>
+    </div>
+
+    <div class="group" id="div-logradouro">      
+      <input type="text" id="logradouro" name="$logradouro" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Logradouro</label>
+    </div>
+
+    <div class="group" id="div-numero">      
+      <input type="text" id="numero" name="$numero" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Nº</label>
+    </div>
+
+    <div class="group" id="div-complemento">      
+      <input type="text" id="complemento" name="$complemento" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Complemento</label>
+    </div>
+
+    <button type="Submit">Cadastrar</button>
+
+    <div class="group" id="div-cidade">      
+      <input type="text" id="cidade" name="$cidade" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Cidade</label>
+    </div>
+
+
+    <div class="group" id="div-uf">      
+      <input type="text" id="uf" name="$uf" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>UF</label>
+    </div>
+
+    <input type="hidden" name="redirectTo" value="file:///C:/Users/jande/OneDrive/%C3%81rea%20de%20Trabalho/FACULDADE/TRABALHOS%202%C2%BA%20SEMESTRE/Receitas/cadastro.html">
+    
+  </form>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#cep').mask('99.999-999');
+    });
+</script>
+
+<!-- <div class="cadastro"> 
+<form action="POST">
+    <div class="user-box">
+        <input type="text" name="" required="">
+        <label>Nome</label>
+    </div> 
+</form>
+</div> -->
+
+  <footer class="footernav">Todos os direitos reservados &copy; Jander Júnior</footer>
+</body>
+</html>
